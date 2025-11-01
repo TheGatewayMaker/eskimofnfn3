@@ -154,7 +154,10 @@ export const DataPlans = () => {
                 Refer a friend and earn 500MB of free data. There's no limit —
                 keep earning data indefinitely through referrals.
               </p>
-              <a href="/#referrals" className="btn-outline inline-flex items-center gap-2">
+              <a
+                href="/#referrals"
+                className="btn-outline inline-flex items-center gap-2"
+              >
                 Learn About Referrals
                 <ArrowRight className="w-4 h-4" />
               </a>

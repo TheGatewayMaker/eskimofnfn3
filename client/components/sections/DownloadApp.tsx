@@ -11,8 +11,8 @@ export const DownloadApp = () => {
 
             <p className="text-lg text-blue-100 mb-8 leading-relaxed">
               Get instant access to all Eskimo features on your phone. Manage
-              your eSIM, track your data, and enjoy seamless global
-              connectivity with our intuitive mobile app.
+              your eSIM, track your data, and enjoy seamless global connectivity
+              with our intuitive mobile app.
             </p>
 
             <div className="space-y-4">
@@ -52,7 +52,10 @@ export const DownloadApp = () => {
           </div>
 
           {/* Right side - Phone Image */}
-          <div className="scroll-fade-in flex justify-center" style={{ animationDelay: "100ms" }}>
+          <div
+            className="scroll-fade-in flex justify-center"
+            style={{ animationDelay: "100ms" }}
+          >
             <img
               src="https://www.eskimo.travel/_next/static/media/bg-home-page-phone.7d9b7e62.png"
               alt="Eskimo App"

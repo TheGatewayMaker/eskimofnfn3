@@ -1,7 +1,6 @@
 import { Mail, User, Send } from "lucide-react";
 
 export const Contact = () => {
-
   return (
     <section className="section-padding bg-gradient-to-b from-blue-50 to-blue-100">
       <div className="container-max">

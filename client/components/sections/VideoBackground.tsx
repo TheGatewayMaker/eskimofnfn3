@@ -40,11 +40,17 @@ export const VideoBackground = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="/#data-plans" className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center gap-2 group">
+              <a
+                href="/#data-plans"
+                className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center gap-2 group"
+              >
                 Get Started Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="/#how-it-works" className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
+              <a
+                href="/#how-it-works"
+                className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
+              >
                 Learn More
               </a>
             </div>
@@ -65,7 +71,9 @@ export const VideoBackground = () => {
                   <div className="text-2xl md:text-3xl font-bold text-cyan-300">
                     {stat.label}
                   </div>
-                  <div className="text-sm text-gray-200 mt-1">{stat.detail}</div>
+                  <div className="text-sm text-gray-200 mt-1">
+                    {stat.detail}
+                  </div>
                 </div>
               ))}
             </div>

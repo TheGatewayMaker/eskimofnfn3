@@ -64,7 +64,10 @@ export const ReferralProgram = () => {
             })}
           </div>
 
-          <a href="/#download" className="btn-primary inline-flex items-center gap-2">
+          <a
+            href="/#download"
+            className="btn-primary inline-flex items-center gap-2"
+          >
             Download App to Get Started
           </a>
         </div>
