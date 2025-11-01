@@ -69,9 +69,16 @@ export const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
             {/* Brand column */}
             <div className="col-span-2 md:col-span-1">
-              <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-                Eskimo
-              </h2>
+              <div className="flex items-center gap-2 mb-4">
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f7/69/fc/f769fc9a-fcf2-4967-cb18-63c6a84a32d8/AppIcon-0-0-1x_U007emarketing-0-85-220.png/230x0w.webp"
+                  alt="Eskimo Logo"
+                  className="w-8 h-8 rounded-lg"
+                />
+                <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+                  Eskimo
+                </h2>
+              </div>
               <p className="text-blue-200 text-sm mb-6">
                 Global eSIM connectivity for everyone. Instant, affordable, and
                 borderless.

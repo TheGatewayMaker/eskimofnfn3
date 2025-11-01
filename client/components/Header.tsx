@@ -19,10 +19,17 @@ export const Header = () => {
         <div className="flex-shrink-0">
           <a
             href="/"
-            className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500"
+            className="flex items-center gap-2"
             aria-label="Eskimo Home"
           >
-            Eskimo
+            <img
+              src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f7/69/fc/f769fc9a-fcf2-4967-cb18-63c6a84a32d8/AppIcon-0-0-1x_U007emarketing-0-85-220.png/230x0w.webp"
+              alt="Eskimo Logo"
+              className="w-10 h-10 rounded-lg"
+            />
+            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+              Eskimo
+            </span>
           </a>
         </div>
 
