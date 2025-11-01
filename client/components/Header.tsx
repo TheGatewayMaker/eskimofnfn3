@@ -7,7 +7,7 @@ export const Header = () => {
   const navLinks = [
     { label: "How It Works", href: "/#how-it-works" },
     { label: "Data Plans", href: "/#data-plans" },
-    { label: "Referrals", href: "/#referrals" },
+    { label: "Download", href: "/#download" },
     { label: "FAQ", href: "/#faq" },
     { label: "Contact", href: "/#contact" },
   ];
