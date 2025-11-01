@@ -76,7 +76,7 @@ export const Footer = () => {
                 Global eSIM connectivity for everyone. Instant, affordable, and
                 borderless.
               </p>
-              <div className="flex gap-3 items-center">
+              <div className="flex flex-wrap gap-2.5 items-center">
                 {socialLinks.map((social, i) => {
                   const Icon = social.icon;
                   return (
@@ -84,9 +84,9 @@ export const Footer = () => {
                       key={i}
                       href={social.href}
                       aria-label={social.label}
-                      className="w-10 h-10 rounded-full bg-blue-700 hover:bg-cyan-400 flex items-center justify-center transition-colors hover:text-blue-900 flex-shrink-0"
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-blue-700 hover:bg-cyan-400 flex items-center justify-center transition-colors hover:text-blue-900 flex-shrink-0"
                     >
-                      <Icon className="w-5 h-5" />
+                      <Icon className="w-4 h-4 md:w-5 md:h-5" />
                     </a>
                   );
                 })}
