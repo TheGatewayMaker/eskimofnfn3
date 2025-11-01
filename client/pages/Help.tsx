@@ -107,9 +107,12 @@ export default function Help() {
                 Our support team is available 24/7 to help you with any
                 questions.
               </p>
-              <button className="btn-primary inline-flex items-center gap-2">
+              <a
+                href="/#contact"
+                className="btn-primary inline-flex items-center gap-2"
+              >
                 Contact Support
-              </button>
+              </a>
             </div>
           </div>
         </section>
