@@ -102,7 +102,9 @@ export const FAQ = () => {
             Our support team is here to help. Get in touch with us via email or
             visit our help center for more information.
           </p>
-          <button className="btn-primary">Contact Support</button>
+          <a href="/#contact" className="btn-primary inline-block">
+            Contact Support
+          </a>
         </div>
       </div>
     </section>
