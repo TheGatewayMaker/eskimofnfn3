@@ -54,6 +54,10 @@ export default function Index() {
           <ReferralProgram />
         </section>
 
+        <section id="more-reasons" className="scroll-mt-20 md:scroll-mt-24">
+          <MoreReasons />
+        </section>
+
         <section id="download" className="scroll-mt-20 md:scroll-mt-24">
           <DownloadApp />
         </section>
