@@ -2,7 +2,7 @@ import { ArrowRight, Zap } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20 md:pt-0">
+    <div className="relative overflow-hidden min-h-[60vh] md:min-h-[75vh] flex items-center justify-center pt-20 md:pt-0">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video
@@ -24,6 +24,16 @@ export const HeroSection = () => {
 
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
+        <div
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        />
+        <div className="pointer-events-none absolute -top-16 -left-16 w-40 h-40 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 -right-24 w-72 h-72 rounded-full bg-blue-500/20 blur-3xl" />
       </div>
 
       <div className="container-max relative z-10 w-full">
