@@ -157,7 +157,8 @@
 
   /* Subtle grid background utility */
   .subtle-grid {
-    background-image: linear-gradient(to right, rgba(2, 6, 23, 0.06) 1px, transparent 1px),
+    background-image:
+      linear-gradient(to right, rgba(2, 6, 23, 0.06) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(2, 6, 23, 0.06) 1px, transparent 1px);
     background-size: 24px 24px;
   }
