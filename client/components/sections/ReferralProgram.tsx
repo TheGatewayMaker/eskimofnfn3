@@ -89,7 +89,7 @@ export const ReferralProgram = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="text-center p-8 md:p-10 bg-white border-2 border-blue-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
+              className="text-center p-4 sm:p-8 md:p-10 bg-white border-2 border-blue-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
             >
               <div className="text-5xl md:text-6xl font-black text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
                 {item.referrals}
