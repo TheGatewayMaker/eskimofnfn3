@@ -75,7 +75,7 @@ export const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-5 sm:px-8 py-4 sm:py-6 text-left hover:bg-gray-50 transition-colors flex items-start justify-between gap-3 sm:gap-4"
               >
-                <span className="font-bold text-gray-900 text-lg md:text-xl group-hover:text-primary transition-colors">
+                <span className="font-bold text-gray-900 text-base sm:text-lg md:text-xl group-hover:text-primary transition-colors">
                   {faq.question}
                 </span>
                 <ChevronDown
