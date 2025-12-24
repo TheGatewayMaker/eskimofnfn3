@@ -69,7 +69,7 @@ export const MoreReasons = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 scroll-fade-in">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 scroll-fade-in">
           {reasons.map((reason, i) => {
             const Icon = reason.icon;
             return (
