@@ -47,7 +47,7 @@ export const DownloadApp = () => {
               </a>
             </div>
 
-            <p className="text-base text-blue-200 mt-10 font-medium">
+            <p className="text-xs sm:text-sm md:text-base text-blue-200 mt-8 sm:mt-10 font-medium">
               Available for iOS and Android. Download now and get 500MB free
               data on signup.
             </p>
