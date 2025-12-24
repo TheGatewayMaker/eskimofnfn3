@@ -66,7 +66,7 @@ export const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight tracking-tight">
             Your One eSIM for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
               Everywhere
