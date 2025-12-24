@@ -113,26 +113,50 @@ export default function Pricing() {
               ))}
             </div>
 
-            <div className="bg-blue-50 rounded-2xl p-8 md:p-12 text-center">
-              <img
-                src="https://i.ibb.co/d4z3607G/eskimologo.png"
-                alt="Eskimo Logo"
-                className="w-16 h-16 mx-auto mb-3"
-              />
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Earn Unlimited Free Data
-              </h2>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Every referral earns you 500MB of free data. With no limit on
-                referrals, you can stay connected indefinitely.
-              </p>
-              <a
-                href="/#referrals"
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                Learn About Referrals
-                <ArrowRight className="w-4 h-4" />
-              </a>
+            <div className="bg-blue-50 rounded-2xl p-8 md:p-16 overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:items-center">
+                <div className="flex flex-col justify-center">
+                  <img
+                    src="https://i.ibb.co/d4z3607G/eskimologo.png"
+                    alt="Eskimo Logo"
+                    className="w-14 h-14 mb-4"
+                  />
+                  <h2 className="text-3xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
+                    Earn Unlimited Free Data
+                  </h2>
+                  <p className="text-gray-700 mb-6 text-base leading-relaxed">
+                    Every referral earns you 500MB of free data. With no limit
+                    on referrals, you can stay connected indefinitely.
+                  </p>
+                  <a
+                    href="/#referrals"
+                    className="btn-primary inline-flex items-center gap-2 w-fit"
+                  >
+                    Learn About Referrals
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+
+                <div className="flex items-center justify-center min-h-96 md:min-h-screen">
+                  <div className="w-full max-w-sm md:max-w-lg aspect-square flex items-center justify-center">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      controls={false}
+                      className="w-full h-full object-contain"
+                      style={{
+                        WebkitUserSelect: "none",
+                        userSelect: "none",
+                      }}
+                    >
+                      <source src="/videos/ai-sphere.webm" type="video/webm" />
+                      <p>Your browser doesn't support HTML5 video.</p>
+                    </video>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
