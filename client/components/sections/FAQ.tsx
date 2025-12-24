@@ -65,7 +65,7 @@ export const FAQ = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-5 scroll-fade-in">
+        <div className="max-w-3xl mx-auto space-y-4 sm:space-y-5 scroll-fade-in">
           {faqs.map((faq, index) => (
             <div
               key={index}
