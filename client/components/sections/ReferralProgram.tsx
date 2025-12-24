@@ -4,98 +4,78 @@ export const ReferralProgram = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-white via-blue-50 to-white">
       <div className="container-max">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-24">
-          <div className="scroll-fade-in">
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">
-              Earn Unlimited{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                Free Data
-              </span>
-            </h2>
+        <div className="scroll-fade-in max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">
+            Earn Unlimited{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+              Free Data
+            </span>
+          </h2>
 
-            <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-medium">
-              Share Eskimo with your friends and family. Every successful referral
-              gives you 500MB of free data, with absolutely no limit. Keep earning
-              data forever.
-            </p>
+          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed font-semibold">
+            Share Eskimo with your friends and family. Every successful referral
+            gives you 500MB of free data, with absolutely no limit. Keep earning
+            data forever.
+          </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {[
-                {
-                  icon: Share2,
-                  title: "Share Your Link",
-                  description:
-                    "Get a unique referral link and share it with anyone, anywhere in the world.",
-                },
-                {
-                  icon: Users,
-                  title: "They Sign Up",
-                  description:
-                    "Your friends activate their eSIM using your referral link.",
-                },
-                {
-                  icon: Gift,
-                  title: "You Both Earn",
-                  description:
-                    "You get 500MB free data, and your friend gets a bonus too.",
-                },
-                {
-                  icon: TrendingUp,
-                  title: "Unlimited Earning",
-                  description:
-                    "No caps, no limits. Refer as many people as you want.",
-                },
-              ].map((item, i) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="flex gap-5 group p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-125 transition-transform duration-300 shadow-lg">
-                        <Icon className="w-7 h-7" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-600 text-base leading-relaxed">
-                        {item.description}
-                      </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {[
+              {
+                icon: Share2,
+                title: "Share Your Link",
+                description:
+                  "Get a unique referral link and share it with anyone, anywhere in the world.",
+              },
+              {
+                icon: Users,
+                title: "They Sign Up",
+                description:
+                  "Your friends activate their eSIM using your referral link.",
+              },
+              {
+                icon: Gift,
+                title: "You Both Earn",
+                description:
+                  "You get 500MB free data, and your friend gets a bonus too.",
+              },
+              {
+                icon: TrendingUp,
+                title: "Unlimited Earning",
+                description:
+                  "No caps, no limits. Refer as many people as you want.",
+              },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={i}
+                  className="flex gap-5 group p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                      <Icon className="w-7 h-7" />
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                  <div className="text-left">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 text-base leading-relaxed font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
 
+          <div className="flex justify-center">
             <a
               href="/#download"
               className="btn-primary inline-flex items-center gap-2 font-bold text-lg"
             >
               Download App to Get Started
             </a>
-          </div>
-
-          <div className="scroll-fade-in flex items-center justify-center min-h-96 md:min-h-screen">
-            <div className="w-full max-w-sm md:max-w-lg aspect-square flex items-center justify-center">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls={false}
-                className="w-full h-full object-contain"
-                style={{
-                  WebkitUserSelect: "none",
-                  userSelect: "none",
-                }}
-              >
-                <source src="/videos/ai-sphere.webm" type="video/webm" />
-                <p>Your browser doesn't support HTML5 video.</p>
-              </video>
-            </div>
           </div>
         </div>
 
