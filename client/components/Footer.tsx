@@ -40,7 +40,6 @@ export const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-blue-900 to-blue-950 text-white">
-      {/* Newsletter signup */}
       <div className="border-b border-blue-700 py-12">
         <div className="container-max">
           <div className="max-w-2xl mx-auto text-center">
@@ -63,11 +62,9 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Main footer content */}
       <div className="border-b border-blue-700 py-16">
         <div className="container-max">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
-            {/* Brand column */}
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img
