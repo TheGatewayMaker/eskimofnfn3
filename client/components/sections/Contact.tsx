@@ -96,7 +96,7 @@ export const Contact = () => {
                 <select
                   name="subject"
                   required
-                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
+                  className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm sm:text-base"
                 >
                   <option value="">Select a subject</option>
                   <option value="Activation Help">Activation Help</option>
