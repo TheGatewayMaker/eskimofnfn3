@@ -19,7 +19,7 @@ export const DownloadApp = () => {
               with our intuitive mobile app.
             </p>
 
-            <div className="flex flex-wrap gap-6 mt-8">
+            <div className="flex flex-wrap gap-4 sm:gap-6 mt-6 sm:mt-8">
               <a
                 href="https://apps.apple.com/us/app/eskimo-esim-travel-internet/id1590276868"
                 target="_blank"
