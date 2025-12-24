@@ -2,7 +2,7 @@ export const DownloadApp = () => {
   return (
     <section className="section-padding bg-gradient-to-br from-blue-600 to-blue-800">
       <div className="container-max">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="scroll-fade-in text-white">
             <img
               src="https://i.ibb.co/d4z3607G/eskimologo.png"
