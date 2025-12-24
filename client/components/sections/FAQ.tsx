@@ -86,8 +86,8 @@ export const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <div className="px-8 py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
-                  <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                <div className="px-5 sm:px-8 py-4 sm:py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg font-medium">
                     {faq.answer}
                   </p>
                 </div>
