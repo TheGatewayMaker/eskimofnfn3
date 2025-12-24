@@ -150,15 +150,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:scale-95;
+    @apply bg-primary text-primary-foreground hover:bg-blue-700 px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:scale-95 text-sm sm:text-base;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-white hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg;
+    @apply bg-secondary text-white hover:bg-blue-600 px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg text-sm sm:text-base;
   }
 
   .btn-outline {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg;
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg text-sm sm:text-base;
   }
 
   .section-padding {
