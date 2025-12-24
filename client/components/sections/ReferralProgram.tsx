@@ -80,7 +80,7 @@ export const ReferralProgram = () => {
         </div>
 
         {/* Benefits comparison */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in">
+        <div className="mt-16 sm:mt-24 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 scroll-fade-in">
           {[
             { referrals: "1", data: "500MB" },
             { referrals: "5", data: "2.5GB" },
