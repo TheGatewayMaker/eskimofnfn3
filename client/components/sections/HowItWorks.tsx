@@ -31,11 +31,11 @@ export const HowItWorks = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-max">
-        <div className="text-center mb-16 scroll-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20 scroll-fade-in">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">
             How Eskimo Works
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium">
             Simple, transparent, and straightforward. Get global connectivity in
             four easy steps.
           </p>
@@ -53,19 +53,19 @@ export const HowItWorks = () => {
                 <div className="relative h-full bg-gradient-to-br from-blue-50 to-transparent border border-blue-100 rounded-xl p-8 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform motion-safe:hover:-translate-y-1 ring-1 ring-transparent hover:ring-blue-200">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-7 h-7" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                    <Icon className="w-8 h-8" />
                   </div>
 
-                  <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-bold text-sm flex items-center justify-center">
+                  <div className="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-black text-lg flex items-center justify-center shadow-md">
                     {index + 1}
                   </div>
 
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 tracking-tight">
                     {step.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-base leading-relaxed">
                     {step.description}
                   </p>
 
@@ -78,12 +78,12 @@ export const HowItWorks = () => {
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-2xl p-8 md:p-12 scroll-fade-in">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 border-2 border-blue-200 rounded-3xl p-8 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {[
               {
                 label: "Starter Data",
-                value: "~1GB",
+                value: "1GB",
                 detail: "First month included",
               },
               {
@@ -99,16 +99,16 @@ export const HowItWorks = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="scroll-fade-in"
+                className="scroll-fade-in group"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <div className="text-3xl font-bold text-primary mb-2">
+                <div className="text-5xl md:text-6xl font-black text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
                   {item.value}
                 </div>
-                <div className="font-semibold text-gray-900 mb-1">
+                <div className="font-bold text-gray-900 mb-2 text-lg">
                   {item.label}
                 </div>
-                <div className="text-sm text-gray-600">{item.detail}</div>
+                <div className="text-base text-gray-700">{item.detail}</div>
               </div>
             ))}
           </div>

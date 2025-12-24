@@ -15,7 +15,6 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <nav className="container-max flex items-center justify-between h-16">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <a
             href="/"
@@ -33,31 +32,29 @@ export const Header = () => {
           </a>
         </div>
 
-        {/* Desktop navigation */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-2">
           {navLinks.map((link, i) => (
             <a
               key={i}
               href={link.href}
-              className="px-4 py-2 text-gray-700 hover:text-primary hover:underline underline-offset-4 decoration-2 decoration-blue-500/50 font-medium transition-colors"
+              className="px-5 py-2 text-gray-700 hover:text-primary hover:bg-blue-50 rounded-lg font-semibold transition-all duration-300 relative group"
             >
               {link.label}
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </div>
 
-        {/* CTA Button */}
         <div className="hidden md:flex items-center gap-4">
           <a
             href="/#data-plans"
-            className="btn-primary inline-flex items-center gap-2 group"
+            className="btn-primary inline-flex items-center gap-2 group font-bold shadow-lg hover:shadow-xl"
           >
             Get Started
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
           </a>
         </div>
 
-        {/* Mobile menu button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
@@ -72,29 +69,28 @@ export const Header = () => {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div
           id="mobile-menu"
-          className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur"
+          className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur animate-slideInUp"
         >
-          <div className="container-max py-4 space-y-2">
+          <div className="container-max py-6 space-y-3">
             {navLinks.map((link, i) => (
               <a
                 key={i}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                className="block px-5 py-3 text-gray-700 font-semibold hover:bg-blue-50 hover:text-primary rounded-lg transition-all duration-300"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="/#data-plans"
-              className="w-full btn-primary flex items-center justify-center gap-2 mt-4"
+              className="w-full btn-primary flex items-center justify-center gap-2 mt-6 font-bold"
             >
               Get Started
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>

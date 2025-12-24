@@ -4,18 +4,17 @@ export const Contact = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-blue-50 to-blue-100">
       <div className="container-max">
-        <div className="text-center mb-16 scroll-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20 scroll-fade-in">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
             Have questions or need assistance? We're here to help. Reach out to
             our team and we'll get back to you as soon as possible.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Contact info cards */}
+        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
           {[
             {
               icon: Mail,
@@ -36,34 +35,36 @@ export const Contact = () => {
             return (
               <div
                 key={i}
-                className="scroll-fade-in text-center"
+                className="scroll-fade-in text-center p-8 border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-lg transition-all duration-300 group"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-primary mx-auto mb-4">
-                  <Icon className="w-8 h-8" />
+                <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-blue-100 text-primary mx-auto mb-6 group-hover:scale-125 transition-transform duration-300 shadow-md">
+                  <Icon className="w-10 h-10" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
-                <div className="font-semibold text-primary mb-2">
+                <div className="font-bold text-primary mb-3 text-lg">
                   {item.detail}
                 </div>
-                <p className="text-sm text-gray-600">{item.description}</p>
+                <p className="text-base text-gray-600 font-medium">
+                  {item.description}
+                </p>
               </div>
             );
           })}
         </div>
 
         <div className="max-w-2xl mx-auto scroll-fade-in">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-12">
+          <div className="bg-white border-2 border-gray-200 rounded-3xl p-10 md:p-14 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <form
               action="https://formspree.io/f/xdkpprzn"
               method="POST"
-              className="space-y-6"
+              className="space-y-8"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label className="block text-base font-bold text-gray-900 mb-3">
                     Full Name
                   </label>
                   <input
@@ -71,11 +72,11 @@ export const Contact = () => {
                     name="name"
                     placeholder="John Doe"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label className="block text-base font-bold text-gray-900 mb-3">
                     Email Address
                   </label>
                   <input
@@ -83,19 +84,19 @@ export const Contact = () => {
                     name="email"
                     placeholder="you@example.com"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">
+                <label className="block text-base font-bold text-gray-900 mb-3">
                   Subject
                 </label>
                 <select
                   name="subject"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
                 >
                   <option value="">Select a subject</option>
                   <option value="Activation Help">Activation Help</option>
@@ -107,28 +108,28 @@ export const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-900 mb-2">
+                <label className="block text-base font-bold text-gray-900 mb-3">
                   Message
                 </label>
                 <textarea
                   name="message"
                   placeholder="Tell us how we can help..."
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                  rows={7}
+                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none text-base"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full btn-primary flex items-center justify-center gap-2"
+                className="w-full btn-primary flex items-center justify-center gap-3 font-bold text-lg py-4"
               >
-                <Send className="w-5 h-5" />
+                <Send className="w-6 h-6" />
                 Send Message
               </button>
             </form>
 
-            <p className="text-xs text-gray-600 text-center mt-6">
+            <p className="text-sm text-gray-600 text-center mt-8 font-medium">
               We respect your privacy. We'll only use your information to
               respond to your inquiry.
             </p>

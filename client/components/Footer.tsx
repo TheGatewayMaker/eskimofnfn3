@@ -40,22 +40,23 @@ export const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-blue-900 to-blue-950 text-white">
-      {/* Newsletter signup */}
       <div className="border-b border-blue-700 py-12">
         <div className="container-max">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-3">Stay Updated</h3>
-            <p className="text-blue-200 mb-6">
+            <h3 className="text-3xl md:text-4xl font-black mb-4">
+              Stay Updated
+            </h3>
+            <p className="text-blue-200 mb-8 font-medium text-lg">
               Get the latest news about Eskimo, new features, and special offers
               straight to your inbox.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                className="flex-grow px-5 py-4 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400 text-base font-medium"
               />
-              <button className="bg-gradient-to-r from-cyan-400 to-blue-400 text-blue-900 font-semibold px-8 py-3 rounded-lg hover:shadow-lg transition-all">
+              <button className="bg-gradient-to-r from-cyan-400 to-blue-400 text-blue-900 font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                 Subscribe
               </button>
             </div>
@@ -63,11 +64,9 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Main footer content */}
       <div className="border-b border-blue-700 py-16">
         <div className="container-max">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
-            {/* Brand column */}
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img
@@ -83,7 +82,7 @@ export const Footer = () => {
                 Global eSIM connectivity for everyone. Instant, affordable, and
                 borderless.
               </p>
-              <div className="flex flex-wrap gap-2.5 items-center">
+              <div className="flex flex-wrap gap-3 items-center">
                 {socialLinks.map((social, i) => {
                   const Icon = social.icon;
                   return (
@@ -91,9 +90,9 @@ export const Footer = () => {
                       key={i}
                       href={social.href}
                       aria-label={social.label}
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-blue-700 hover:bg-cyan-400 flex items-center justify-center transition-colors hover:text-blue-900 flex-shrink-0"
+                      className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-blue-700 hover:bg-cyan-400 flex items-center justify-center transition-all duration-300 hover:text-blue-900 flex-shrink-0 hover:scale-110 shadow-md"
                     >
-                      <Icon className="w-4 h-4 md:w-5 md:h-5" />
+                      <Icon className="w-5 h-5 md:w-6 md:h-6" />
                     </a>
                   );
                 })}
@@ -103,13 +102,13 @@ export const Footer = () => {
             {/* Link columns */}
             {Object.entries(footerLinks).map(([category, links]) => (
               <div key={category}>
-                <h4 className="font-semibold mb-4">{category}</h4>
-                <ul className="space-y-2">
+                <h4 className="font-bold mb-6 text-lg">{category}</h4>
+                <ul className="space-y-3">
                   {links.map((link, i) => (
                     <li key={i}>
                       <a
                         href={link.href}
-                        className="text-blue-200 hover:text-white hover:underline underline-offset-4 transition-colors text-sm"
+                        className="text-blue-200 hover:text-white hover:translate-x-1 transition-all duration-300 font-medium text-base block"
                       >
                         {link.label}
                       </a>
@@ -129,14 +128,23 @@ export const Footer = () => {
             <div className="text-blue-300 text-sm">
               <p>&copy; {currentYear} Eskimo Global. All rights reserved.</p>
             </div>
-            <div className="flex gap-6 text-sm text-blue-300">
-              <a href="/legal" className="hover:text-white transition-colors">
+            <div className="flex gap-6 text-base text-blue-300 font-medium">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Privacy Policy
               </a>
-              <a href="/legal" className="hover:text-white transition-colors">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Terms of Service
               </a>
-              <a href="/legal" className="hover:text-white transition-colors">
+              <a
+                href="/legal"
+                className="hover:text-white hover:translate-x-1 transition-all duration-300"
+              >
                 Cookie Policy
               </a>
             </div>

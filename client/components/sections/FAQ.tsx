@@ -55,27 +55,27 @@ export const FAQ = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="container-max">
-        <div className="text-center mb-16 scroll-fade-in">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20 scroll-fade-in">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-medium">
             Everything you need to know about Eskimo eSIM, from activation to
             data plans and referrals.
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 scroll-fade-in">
+        <div className="max-w-3xl mx-auto space-y-5 scroll-fade-in">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:border-primary transition-colors"
+              className="border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-primary hover:shadow-lg transition-all duration-300 group"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 text-left hover:bg-gray-50 transition-colors flex items-start justify-between gap-4"
+                className="w-full px-8 py-6 text-left hover:bg-gray-50 transition-colors flex items-start justify-between gap-4"
               >
-                <span className="font-semibold text-gray-900 text-lg">
+                <span className="font-bold text-gray-900 text-lg md:text-xl group-hover:text-primary transition-colors">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -86,23 +86,28 @@ export const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <div className="px-6 py-4 border-t border-gray-200 bg-white animate-slideInUp">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <div className="px-8 py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
+                  <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-2xl p-8 md:p-12 text-center scroll-fade-in">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
+        <div className="mt-24 bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-3xl p-10 md:p-16 text-center scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-3xl md:text-4xl font-black text-gray-900 mb-5">
             Still have questions?
           </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg font-medium">
             Our support team is here to help. Get in touch with us via email or
             visit our help center for more information.
           </p>
-          <a href="/#contact" className="btn-primary inline-block">
+          <a
+            href="/#contact"
+            className="btn-primary inline-block font-bold text-lg"
+          >
             Contact Support
           </a>
         </div>

@@ -4,21 +4,21 @@ export const ReferralProgram = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-white via-blue-50 to-white">
       <div className="container-max">
-        <div className="scroll-fade-in max-w-3xl">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="scroll-fade-in max-w-4xl">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">
             Earn Unlimited{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
               Free Data
             </span>
           </h2>
 
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-medium">
             Share Eskimo with your friends and family. Every successful referral
             gives you 500MB of free data, with absolutely no limit. Keep earning
             data forever.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {[
               {
                 icon: Share2,
@@ -47,17 +47,22 @@ export const ReferralProgram = () => {
             ].map((item, i) => {
               const Icon = item.icon;
               return (
-                <div key={i} className="flex gap-4 group">
+                <div
+                  key={i}
+                  className="flex gap-5 group p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
+                >
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-110 transition-transform">
-                      <Icon className="w-6 h-6" />
+                    <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                      <Icon className="w-7 h-7" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <p className="text-gray-600 text-base leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               );
@@ -66,14 +71,14 @@ export const ReferralProgram = () => {
 
           <a
             href="/#download"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-primary inline-flex items-center gap-2 font-bold text-lg"
           >
             Download App to Get Started
           </a>
         </div>
 
         {/* Benefits comparison */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in">
+        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in">
           {[
             { referrals: "1", data: "500MB" },
             { referrals: "5", data: "2.5GB" },
@@ -82,16 +87,20 @@ export const ReferralProgram = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="text-center p-6 bg-white border border-blue-200 rounded-xl hover:shadow-lg transition-shadow"
+              className="text-center p-8 md:p-10 bg-white border-2 border-blue-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
             >
-              <div className="text-3xl font-bold text-primary mb-2">
+              <div className="text-5xl md:text-6xl font-black text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
                 {item.referrals}
               </div>
-              <div className="text-sm text-gray-600 mb-3">Referrals</div>
-              <div className="text-2xl font-bold text-gray-900">
+              <div className="text-base font-semibold text-gray-600 mb-4">
+                Referrals
+              </div>
+              <div className="text-3xl md:text-4xl font-black text-gray-900">
                 {item.data}
               </div>
-              <div className="text-xs text-gray-600 mt-1">Free Data</div>
+              <div className="text-sm font-medium text-gray-600 mt-3">
+                Free Data
+              </div>
             </div>
           ))}
         </div>

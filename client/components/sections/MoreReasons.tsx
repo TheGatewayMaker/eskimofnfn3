@@ -58,13 +58,13 @@ export const MoreReasons = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
       <div className="container-max">
-        <div className="text-center mb-16 scroll-fade-in">
+        <div className="text-center mb-20 scroll-fade-in">
           <img
             src="https://i.ibb.co/d4z3607G/eskimologo.png"
             alt="Eskimo Logo"
-            className="w-16 h-16 mx-auto mb-4"
+            className="w-20 h-20 mx-auto mb-6"
           />
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-4 tracking-tight">
             More reasons to love Eskimo eSIM
           </h2>
         </div>
@@ -75,18 +75,20 @@ export const MoreReasons = () => {
             return (
               <div
                 key={i}
-                className="text-center p-6 hover:shadow-lg transition-shadow duration-300"
+                className="text-center p-8 md:p-10 bg-white border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 group"
                 style={{ animationDelay: `${i * 50}ms` }}
               >
-                <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center text-primary">
-                    <Icon className="w-8 h-8" />
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center text-primary group-hover:scale-125 transition-transform duration-300 shadow-md">
+                    <Icon className="w-10 h-10" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
                   {reason.title}
                 </h3>
-                <p className="text-sm text-gray-600">{reason.description}</p>
+                <p className="text-base text-gray-600 font-medium leading-relaxed">
+                  {reason.description}
+                </p>
               </div>
             );
           })}
