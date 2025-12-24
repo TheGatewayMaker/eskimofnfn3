@@ -113,26 +113,41 @@ export default function Pricing() {
               ))}
             </div>
 
-            <div className="bg-blue-50 rounded-2xl p-8 md:p-12 text-center">
-              <img
-                src="https://i.ibb.co/d4z3607G/eskimologo.png"
-                alt="Eskimo Logo"
-                className="w-16 h-16 mx-auto mb-3"
-              />
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Earn Unlimited Free Data
-              </h2>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Every referral earns you 500MB of free data. With no limit on
-                referrals, you can stay connected indefinitely.
-              </p>
-              <a
-                href="/#referrals"
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                Learn About Referrals
-                <ArrowRight className="w-4 h-4" />
-              </a>
+            <div className="bg-blue-50 rounded-2xl p-8 md:p-12 overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="text-left md:text-left">
+                  <img
+                    src="https://i.ibb.co/d4z3607G/eskimologo.png"
+                    alt="Eskimo Logo"
+                    className="w-16 h-16 mb-2"
+                  />
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                    Earn Unlimited Free Data
+                  </h2>
+                  <p className="text-gray-600 mb-5 text-sm">
+                    Every referral earns you 500MB of free data. With no limit on
+                    referrals, you can stay connected indefinitely.
+                  </p>
+                  <a
+                    href="/#referrals"
+                    className="btn-primary inline-flex items-center gap-2"
+                  >
+                    Learn About Referrals
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+
+                <div className="hidden md:flex items-center justify-center">
+                  <video
+                    src="https://cdn.builder.io/o/assets%2F295a429d85044c78a21132b7d7f08c9b%2Fc7e24e1540e4417abfeec04798a779fb?alt=media&token=1232db6e-fabb-4441-a344-245bf05eccb6&apiKey=295a429d85044c78a21132b7d7f08c9b"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full max-w-sm h-auto object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
