@@ -107,10 +107,10 @@ export const HeroSection = () => {
                 className="animate-fadeIn"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <div className="text-3xl md:text-4xl font-black text-cyan-300">
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-cyan-300">
                   {stat.label}
                 </div>
-                <div className="text-xs sm:text-sm text-gray-200 mt-2">
+                <div className="text-xs sm:text-sm text-gray-200 mt-1 sm:mt-2">
                   {stat.detail}
                 </div>
               </div>
