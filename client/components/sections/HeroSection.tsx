@@ -2,13 +2,14 @@ import { ArrowRight, Zap } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0">
+    <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
       <div className="absolute inset-0 w-full h-full">
         <video
           autoPlay
           muted
           loop
           playsInline
+          crossOrigin="anonymous"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             WebkitUserSelect: "none",
@@ -16,7 +17,7 @@ export const HeroSection = () => {
           }}
         >
           <source
-            src="https://www.eskimo.travel/videos/5-manifest.mp4"
+            src="https://videos.pexels.com/video-files/3191603/3191603-sd_640_360_30fps.mp4"
             type="video/mp4"
           />
         </video>
