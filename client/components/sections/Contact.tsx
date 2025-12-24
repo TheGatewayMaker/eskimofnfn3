@@ -62,7 +62,7 @@ export const Contact = () => {
               method="POST"
               className="space-y-8"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <label className="block text-base font-bold text-gray-900 mb-3">
                     Full Name
