@@ -41,7 +41,7 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -50,7 +50,7 @@ export const HowItWorks = () => {
                 className="group scroll-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-full bg-gradient-to-br from-blue-50 to-transparent border border-blue-100 rounded-xl p-8 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform motion-safe:hover:-translate-y-1 ring-1 ring-transparent hover:ring-blue-200">
+                <div className="relative h-full bg-gradient-to-br from-blue-50 to-transparent border border-blue-100 rounded-xl p-6 sm:p-8 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform motion-safe:hover:-translate-y-1 ring-1 ring-transparent hover:ring-blue-200">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-lg">
@@ -78,7 +78,7 @@ export const HowItWorks = () => {
           })}
         </div>
 
-        <div className="mt-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 border-2 border-blue-200 rounded-3xl p-8 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="mt-16 sm:mt-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 border-2 border-blue-200 rounded-3xl p-6 sm:p-8 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {[
               {

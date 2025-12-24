@@ -14,7 +14,7 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 mb-16 sm:mb-20">
           {[
             {
               icon: Mail,
@@ -56,13 +56,13 @@ export const Contact = () => {
         </div>
 
         <div className="max-w-2xl mx-auto scroll-fade-in">
-          <div className="bg-white border-2 border-gray-200 rounded-3xl p-10 md:p-14 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 sm:p-10 md:p-14 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <form
               action="https://formspree.io/f/xdkpprzn"
               method="POST"
               className="space-y-8"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <label className="block text-base font-bold text-gray-900 mb-3">
                     Full Name
@@ -72,7 +72,7 @@ export const Contact = () => {
                     name="name"
                     placeholder="John Doe"
                     required
-                    className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
+                    className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm sm:text-base"
                   />
                 </div>
                 <div>
@@ -84,7 +84,7 @@ export const Contact = () => {
                     name="email"
                     placeholder="you@example.com"
                     required
-                    className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
+                    className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm sm:text-base"
                   />
                 </div>
               </div>
@@ -96,7 +96,7 @@ export const Contact = () => {
                 <select
                   name="subject"
                   required
-                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-base"
+                  className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm sm:text-base"
                 >
                   <option value="">Select a subject</option>
                   <option value="Activation Help">Activation Help</option>
@@ -115,8 +115,8 @@ export const Contact = () => {
                   name="message"
                   placeholder="Tell us how we can help..."
                   required
-                  rows={7}
-                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none text-base"
+                  rows={5}
+                  className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none text-sm sm:text-base"
                 />
               </div>
 

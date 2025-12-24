@@ -18,7 +18,7 @@ export const ReferralProgram = () => {
             data forever.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 mb-12">
             {[
               {
                 icon: Share2,
@@ -49,7 +49,7 @@ export const ReferralProgram = () => {
               return (
                 <div
                   key={i}
-                  className="flex gap-5 group p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
+                  className="flex gap-4 group p-4 sm:p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
                 >
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-125 transition-transform duration-300 shadow-lg">
@@ -80,7 +80,7 @@ export const ReferralProgram = () => {
         </div>
 
         {/* Benefits comparison */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in">
+        <div className="mt-16 sm:mt-24 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 scroll-fade-in">
           {[
             { referrals: "1", data: "500MB" },
             { referrals: "5", data: "2.5GB" },
@@ -89,7 +89,7 @@ export const ReferralProgram = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="text-center p-8 md:p-10 bg-white border-2 border-blue-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
+              className="text-center p-4 sm:p-8 md:p-10 bg-white border-2 border-blue-200 rounded-2xl hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
             >
               <div className="text-5xl md:text-6xl font-black text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
                 {item.referrals}

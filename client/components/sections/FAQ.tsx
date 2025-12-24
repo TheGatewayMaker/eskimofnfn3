@@ -65,7 +65,7 @@ export const FAQ = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-5 scroll-fade-in">
+        <div className="max-w-3xl mx-auto space-y-4 sm:space-y-5 scroll-fade-in">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -73,9 +73,9 @@ export const FAQ = () => {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-8 py-6 text-left hover:bg-gray-50 transition-colors flex items-start justify-between gap-4"
+                className="w-full px-5 sm:px-8 py-4 sm:py-6 text-left hover:bg-gray-50 transition-colors flex items-start justify-between gap-3 sm:gap-4"
               >
-                <span className="font-bold text-gray-900 text-lg md:text-xl group-hover:text-primary transition-colors">
+                <span className="font-bold text-gray-900 text-base sm:text-lg md:text-xl group-hover:text-primary transition-colors">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -86,8 +86,8 @@ export const FAQ = () => {
               </button>
 
               {openIndex === index && (
-                <div className="px-8 py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
-                  <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                <div className="px-5 sm:px-8 py-4 sm:py-6 border-t-2 border-gray-200 bg-white animate-slideInUp">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg font-medium">
                     {faq.answer}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-24 bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-3xl p-10 md:p-16 text-center scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="mt-16 sm:mt-24 bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-3xl p-6 sm:p-10 md:p-16 text-center scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-3xl md:text-4xl font-black text-gray-900 mb-5">
             Still have questions?
           </h3>

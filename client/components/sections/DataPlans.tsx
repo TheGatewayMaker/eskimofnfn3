@@ -80,7 +80,7 @@ export const DataPlans = () => {
               )}
 
               <div
-                className={`p-8 md:p-12 h-full flex flex-col ${plan.highlighted ? "text-white" : "text-gray-900"}`}
+                className={`p-6 sm:p-8 md:p-12 h-full flex flex-col ${plan.highlighted ? "text-white" : "text-gray-900"}`}
               >
                 <div className="mb-8">
                   <h3 className="text-3xl md:text-4xl font-black mb-3">
@@ -137,7 +137,7 @@ export const DataPlans = () => {
           ))}
         </div>
 
-        <div className="bg-white border-2 border-blue-200 rounded-3xl p-10 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white border-2 border-blue-200 rounded-3xl p-6 sm:p-10 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="group">
               <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-5 group-hover:text-primary transition-colors">

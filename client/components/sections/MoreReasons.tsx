@@ -69,13 +69,13 @@ export const MoreReasons = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 scroll-fade-in">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 scroll-fade-in">
           {reasons.map((reason, i) => {
             const Icon = reason.icon;
             return (
               <div
                 key={i}
-                className="text-center p-8 md:p-10 bg-white border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 group"
+                className="text-center p-5 sm:p-8 md:p-10 bg-white border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 group"
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <div className="flex justify-center mb-6">
