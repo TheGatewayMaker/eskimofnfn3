@@ -18,7 +18,7 @@ export const ReferralProgram = () => {
             data forever.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 mb-12">
             {[
               {
                 icon: Share2,
