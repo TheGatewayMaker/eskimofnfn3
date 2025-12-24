@@ -77,25 +77,25 @@ export const Header = () => {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur"
+          className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur animate-slideInUp"
         >
-          <div className="container-max py-4 space-y-2">
+          <div className="container-max py-6 space-y-3">
             {navLinks.map((link, i) => (
               <a
                 key={i}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                className="block px-5 py-3 text-gray-700 font-semibold hover:bg-blue-50 hover:text-primary rounded-lg transition-all duration-300"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="/#data-plans"
-              className="w-full btn-primary flex items-center justify-center gap-2 mt-4"
+              className="w-full btn-primary flex items-center justify-center gap-2 mt-6 font-bold"
             >
               Get Started
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
