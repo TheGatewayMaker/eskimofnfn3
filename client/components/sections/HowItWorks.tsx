@@ -78,7 +78,7 @@ export const HowItWorks = () => {
           })}
         </div>
 
-        <div className="mt-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 border-2 border-blue-200 rounded-3xl p-8 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="mt-16 sm:mt-20 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 border-2 border-blue-200 rounded-3xl p-6 sm:p-8 md:p-16 scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {[
               {
