@@ -95,7 +95,7 @@ export const HeroSection = () => {
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-4 sm:px-0">
+          <div className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center px-2 sm:px-0">
             {[
               { label: "200+", detail: "Countries" },
               { label: "4G/5G", detail: "Networks" },
