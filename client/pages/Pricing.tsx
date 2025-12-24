@@ -125,7 +125,8 @@ export default function Pricing() {
                     Earn Unlimited Free Data
                   </h2>
                   <p className="text-gray-700 mb-6 text-base leading-relaxed">
-                    Every referral earns you 500MB of free data. With no limit on referrals, you can stay connected indefinitely.
+                    Every referral earns you 500MB of free data. With no limit
+                    on referrals, you can stay connected indefinitely.
                   </p>
                   <a
                     href="/#referrals"
@@ -150,10 +151,7 @@ export default function Pricing() {
                         userSelect: "none",
                       }}
                     >
-                      <source
-                        src="/videos/ai-sphere.webm"
-                        type="video/webm"
-                      />
+                      <source src="/videos/ai-sphere.webm" type="video/webm" />
                       <p>Your browser doesn't support HTML5 video.</p>
                     </video>
                   </div>
