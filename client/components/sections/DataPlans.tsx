@@ -80,7 +80,7 @@ export const DataPlans = () => {
               )}
 
               <div
-                className={`p-8 md:p-12 h-full flex flex-col ${plan.highlighted ? "text-white" : "text-gray-900"}`}
+                className={`p-6 sm:p-8 md:p-12 h-full flex flex-col ${plan.highlighted ? "text-white" : "text-gray-900"}`}
               >
                 <div className="mb-8">
                   <h3 className="text-3xl md:text-4xl font-black mb-3">
