@@ -13,7 +13,7 @@ export const DownloadApp = () => {
               Download Our Official App
             </h2>
 
-            <p className="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-medium">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-100 mb-8 sm:mb-10 leading-relaxed font-medium">
               Get instant access to all Eskimo features on your phone. Manage
               your eSIM, track your data, and enjoy seamless global connectivity
               with our intuitive mobile app.
