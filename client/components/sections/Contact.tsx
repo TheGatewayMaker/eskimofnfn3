@@ -56,7 +56,7 @@ export const Contact = () => {
         </div>
 
         <div className="max-w-2xl mx-auto scroll-fade-in">
-          <div className="bg-white border-2 border-gray-200 rounded-3xl p-10 md:p-14 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-white border-2 border-gray-200 rounded-3xl p-6 sm:p-10 md:p-14 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <form
               action="https://formspree.io/f/xdkpprzn"
               method="POST"
