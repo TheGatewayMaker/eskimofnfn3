@@ -75,7 +75,7 @@ export const MoreReasons = () => {
             return (
               <div
                 key={i}
-                className="text-center p-8 md:p-10 bg-white border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 group"
+                className="text-center p-5 sm:p-8 md:p-10 bg-white border-2 border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 group"
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <div className="flex justify-center mb-6">
