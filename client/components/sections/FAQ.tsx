@@ -96,7 +96,7 @@ export const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-24 bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-3xl p-10 md:p-16 text-center scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="mt-16 sm:mt-24 bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-3xl p-6 sm:p-10 md:p-16 text-center scroll-fade-in shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h3 className="text-3xl md:text-4xl font-black text-gray-900 mb-5">
             Still have questions?
           </h3>
