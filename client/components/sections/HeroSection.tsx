@@ -27,7 +27,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden min-h-screen md:min-h-[80vh] flex items-center justify-center pt-16 md:pt-0 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
+    <div className="relative overflow-hidden min-h-[90vh] sm:min-h-screen md:min-h-[80vh] flex items-center justify-center py-12 sm:py-16 md:pt-0 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
       <div className="absolute inset-0 w-full h-full">
         <video
           ref={videoRef}
