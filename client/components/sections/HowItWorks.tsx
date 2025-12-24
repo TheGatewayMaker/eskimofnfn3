@@ -50,7 +50,7 @@ export const HowItWorks = () => {
                 className="group scroll-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-full bg-gradient-to-br from-blue-50 to-transparent border border-blue-100 rounded-xl p-8 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform motion-safe:hover:-translate-y-1 ring-1 ring-transparent hover:ring-blue-200">
+                <div className="relative h-full bg-gradient-to-br from-blue-50 to-transparent border border-blue-100 rounded-xl p-6 sm:p-8 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform motion-safe:hover:-translate-y-1 ring-1 ring-transparent hover:ring-blue-200">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-lg">
