@@ -73,7 +73,7 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
             Instant global connectivity without ID verification. Get 4G/5G data
             in 200+ countries, earn unlimited free data through referrals, and
             stay connected forever.
