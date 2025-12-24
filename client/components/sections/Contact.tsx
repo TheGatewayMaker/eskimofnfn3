@@ -115,8 +115,8 @@ export const Contact = () => {
                   name="message"
                   placeholder="Tell us how we can help..."
                   required
-                  rows={7}
-                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none text-base"
+                  rows={5}
+                  className="w-full px-4 sm:px-5 py-3 sm:py-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none text-sm sm:text-base"
                 />
               </div>
 
