@@ -41,10 +41,7 @@ export const HeroSection = () => {
             userSelect: "none",
           }}
         >
-          <source
-            src="/videos/eskimocreatorvideo.mp4"
-            type="video/mp4"
-          />
+          <source src="/videos/eskimocreatorvideo.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
