@@ -9,7 +9,7 @@ export const DownloadApp = () => {
               alt="Eskimo Logo"
               className="w-20 h-20 mb-6"
             />
-            <h2 className="text-5xl md:text-6xl font-black mb-8 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 sm:mb-8 tracking-tight">
               Download Our Official App
             </h2>
 
