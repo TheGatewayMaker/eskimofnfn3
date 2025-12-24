@@ -14,7 +14,7 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 mb-16 sm:mb-20">
           {[
             {
               icon: Mail,
