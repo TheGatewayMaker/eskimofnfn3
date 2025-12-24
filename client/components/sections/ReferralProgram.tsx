@@ -49,7 +49,7 @@ export const ReferralProgram = () => {
               return (
                 <div
                   key={i}
-                  className="flex gap-5 group p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
+                  className="flex gap-4 group p-4 sm:p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300"
                 >
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white group-hover:scale-125 transition-transform duration-300 shadow-lg">
